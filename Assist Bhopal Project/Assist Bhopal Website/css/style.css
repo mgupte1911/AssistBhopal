@@ -12,9 +12,11 @@ html{
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+
 textarea:focus,
 input:focus{
   outline: none;
+  color:black;
 }
 
 img{
@@ -101,6 +103,7 @@ a,p,li,input,textarea{
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color:#111;
 }
 p {
 	color: #333;
@@ -1197,7 +1200,7 @@ header.mts-page-header .mts-main-menu.minified{
 	border: 1px solid #aaa !important;
 	padding: 15px;
 	border: none;
-	color: #ffffff !important;
+	color: #111 !important;
 }
 
 .mts-contact-section .mts-contact-form input[type='submit']{
