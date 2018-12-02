@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html> 
+﻿<!DOCTYPE html>     
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -45,7 +45,7 @@
                     </button>
 
                     <!-- Logo -->
-                    <a class="navbar-brand" href="index.html"><img class="logo" height="85" width="110" id="logo" src="images/logo.png" alt="logo">Assist Bhopal</a>
+                    <a style="color:white" class="navbar-brand" href="index.html"><img class="logo" height="85" width="110" id="logo" src="images/logo.png" alt="logo">Assist Bhopal</a>
 
                 </div>
                 <!-- Navbar Toggle End -->
@@ -101,7 +101,7 @@
 
                 <p class="sp-layer"
                    data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    A non-profit organization providing nutritious meals
+                    An organization, affiliated with PSR Wisconsin, providing nutritious meals
                 </p>
             </div>
             <!-- Slides End -->
@@ -117,7 +117,7 @@
 
                 <p class="sp-layer"
                    data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    A non-profit organization providing nutritious meals
+                    An organization, affiliated with PSR Wisconsin, providing nutritious meals
                 </p>
             </div>
             <!-- Slides End -->
@@ -134,7 +134,7 @@
 
                 <p class="sp-layer"
                    data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    A non-profit organization providing nutritious meals
+                    An organization, affiliated with PSR Wisconsin, providing nutritious meals
                 </p>
             </div>
             <!-- Slides End -->
@@ -167,7 +167,7 @@
 
                         <div class="col-md-11">
                             <h3>THE CHINGARI TRUST</h3>
-                            <p style="text-align:justify">Assist Bhopal wouldn't be what it is today if it wasn't for two survivors of the gas disaster. Ms. Rashida Bee and Ms. Champadevi Shukla have poured an immense amount of time and effort in creating the <a target="_blank" href="https://bhopal.org/about-us/chingari-rehabilitation-centre/">Chingari Rehabilitation Center and program</a>. They received  <b>The Goldman Environmental Prize</b> in 2004 and generously used their award money to create something inspiringly selfless. Chingari Trust is a rehabilitation center that provides transportation, therapy (PT, OT, speech) and special education completely free to children and young adults in which the psychological and physical wellbeing of the second-hand gas victims is priority. All the donations will be going to Chingari Trust’s nutrition program.</p>
+                            <p style="text-align:justify">Assist Bhopal wouldn't be what it is today if it wasn't for two survivors of the gas disaster. Ms. Rashida Bee and Ms. Champadevi Shukla have poured an immense amount of time and effort in creating the <a target="_blank" href="https://bhopal.org/about-us/chingari-rehabilitation-centre/">Chingari Rehabilitation Center and program</a>. They received <a href="https://www.goldmanprize.org/prize-recipients/" target="_blank"> The Goldman Environmental Prize</a> in 2004 and generously used their award money to create something inspiringly selfless. Chingari Trust is a rehabilitation center that provides transportation, therapy (PT, OT, speech) and special education completely free to children and young adults in which the psychological and physical wellbeing of the second-hand gas victims is priority. All the donations will be going to Chingari Trust’s nutrition program.</p>
 
                             <!--<br />For more info visit   <a target="_blank" href="https://bhopal.org/about-us/chingari-rehabilitation-centre/">https://bhopal.org/about-us/chingari-rehabilitation-centre/</a> -->
                         </div>
@@ -290,9 +290,7 @@
 
                     <!-- Testimonial Slider -->
                     <div id="mts-testimonial" class="owl-carousel mts-testimonial">
-                        
-                       
-                        
+                     
                     </div>
                     <!-- Testimonial Slider End -->
                     <div id="pricing"></div>
@@ -485,22 +483,41 @@
                     <div class="col-md-6 col-sm-6 col-xs-12 mts-contact-form wow bounceInRight">
                         <div id="contact-result"></div>
                         <div id="contact-form">
-                            <div class="mts-input-name mts-input-fields">
-                                <input type="text" name="name" id="name" placeholder="Name">
-                            </div>
+                            <form action="send_message.php" method="post" id="contactform" onsubmit="clearField();" >
+                                <div class="mts-input-name mts-input-fields">
+                                    <input type="text" name="name" id="name" placeholder="Name" required>
+                                </div>
 
-                            <div class="mts-input-email mts-input-fields">
-                                <input type="email" name="email" id="email" placeholder="Email">
-                            </div>
+                                <div class="mts-input-email mts-input-fields">
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                </div>
 
-                            <div class="mts-input-name mts-input-fields">
-                                <textarea style="color:#000000" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                <div class="mts-input-name mts-input-fields">
+                                    <textarea style="color:#000000" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                                </div>
 
-                            </div>
-
-                            <input type="submit" value="SEND MESSAGE" id="submit-btn">
+                                <input type="submit" name="submit" value="SEND MESSAGE" id="submit-btn" data-toggle="modal" class="modal-toggle">
+                                <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title"> <p style="color:black">Your message has been sent!</p></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Thank you for showing interest. We will respond to you shortly!</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+                            </form>
+                            
                         </div>
                     </div>
+                    
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ducimus in rerum fugiat deserunt laboriosam tempore velit, eaque provident incidunt quisquam. Qui soluta accusantium pariatur obcaecati, harum molestiae eum, repellendus.</p> -->
                         <ul>
@@ -524,7 +541,7 @@
             <div class="row footer-content">
                 <div class="col-md-4">
                     <center><img src="images/logo.png" alt=""></center>
-                    <p style="">A non-profit organization providing nutritional meals</p>
+                    <p style="text-align:center">An organization, affiliated with PSR Wisconsin, providing nutritious meals</p>
                 </div>
                 <div class="col-md-4">
                     <h3>Sections</h3>
@@ -575,15 +592,7 @@
                         <li>
                             <a href="https://www.facebook.com/AssistBhopal/" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                        </li>
+                        
                     </ul>
 
                 </div>
@@ -613,6 +622,19 @@
     <script src="js/jquery.sliderPro.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    
+    <script type="text/javascript">
+        function clearField() {
+            document.getElementById("contactform").reset();
+            return false;
+        }
 
+            $('#contactform').on('submit', function (e) {
+                $('#myModal').modal('show');
+                e.preventDefault();
+            });
+            document.getElementById("contactform").reset();
+        
+    </script>
 </body>
 </html>

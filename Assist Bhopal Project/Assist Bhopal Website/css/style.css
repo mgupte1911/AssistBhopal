@@ -16,7 +16,7 @@ html{
 textarea:focus,
 input:focus{
   outline: none;
-  color:black;
+
 }
 
 img{
@@ -103,7 +103,6 @@ a,p,li,input,textarea{
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color:#111;
 }
 p {
 	color: #333;
