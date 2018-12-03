@@ -450,8 +450,13 @@
                 <!-- Portfolio Items End -->
                 <!-- portfolio.txt -->
 
-            </div><br />
-            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/WKt3k6VC2Fs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            </div>
+            <center>
+            <video height="420" width="670" controls>
+                <source src="video/Assist Bhopal.mp4" type="video/mp4">
+            </video>
+                
+            </center>
         </div>
         <!-- Works End -->
         <div id="contact"></div>
@@ -483,7 +488,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12 mts-contact-form wow bounceInRight">
                         <div id="contact-result"></div>
                         <div id="contact-form">
-                            <form action="send_message.php" method="post" id="contactform" onsubmit="clearField();" >
+                            <form action="send_message.php" name="form" method="post" id="contactform"  >
                                 <div class="mts-input-name mts-input-fields">
                                     <input type="text" name="name" id="name" placeholder="Name" required>
                                 </div>
@@ -493,7 +498,7 @@
                                 </div>
 
                                 <div class="mts-input-name mts-input-fields">
-                                    <textarea style="color:#000000" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                                    <textarea style="color:#000000" name="msg" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
                                 </div>
 
                                 <input type="submit" name="submit" value="SEND MESSAGE" id="submit-btn" data-toggle="modal" class="modal-toggle">
@@ -631,9 +636,10 @@
 
             $('#contactform').on('submit', function (e) {
                 $('#myModal').modal('show');
+                document.getElementById("contactform").reset();
                 e.preventDefault();
             });
-            document.getElementById("contactform").reset();
+            
         
     </script>
 </body>
