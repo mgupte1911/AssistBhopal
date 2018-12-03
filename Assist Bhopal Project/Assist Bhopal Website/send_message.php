@@ -1,5 +1,6 @@
 <?php
-	if(isset($_POST['submit'])){
+	if(isset($_POST['submit']))
+  {
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$msg=$_POST['msg'];
@@ -9,11 +10,7 @@
 		$message="Name :".$name."\n"."Wrote the following message:"."\n\n".$msg;
 		$headers="From: ".$email;
 
-		if(mail($to, $subject, $message, $headers)){
-			 echo '';
-		}
-		else{
-			echo "Something went wrong!";
-		}
+		mail($to, $subject, $message, $headers);
+		
 	}
 ?>
