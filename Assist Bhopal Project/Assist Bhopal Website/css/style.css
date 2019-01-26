@@ -12,6 +12,12 @@ html{
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+.text-muted{font-style:italic; color:coral;}
 
 textarea:focus,
 input:focus{
@@ -62,7 +68,7 @@ header.mts-page-header{
 
 /* ------ Typography Style----- */
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Raleway', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin-top: 0;
@@ -98,7 +104,7 @@ h5{
 }
 
 a,p,li,input,textarea{
-    font-family: 'Raleway', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -135,7 +141,7 @@ a:active{
 
 /* ----- Button Style------*/
 .mts-button-solid{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;
@@ -153,7 +159,7 @@ a:active{
 	color: #ffffff;
 }
 .mts-button-outline{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;
@@ -169,7 +175,7 @@ a:active{
 }
 
 .mts-button-outline-round{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
@@ -223,7 +229,7 @@ a:active{
 	border: 1px solid transparent;
 }
 .mts-btn-round{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	padding: 15px 30px;
@@ -395,14 +401,14 @@ a:active{
 }
 
 .mts-section-header h1{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	color: #ffffff;
 }
 
 .mts-section-header h2{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 700;
 	font-size: 62px;
 	color: #111;
@@ -413,7 +419,7 @@ a:active{
 }
 
 .mts-section-header h1 span{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 }
@@ -425,7 +431,7 @@ a:active{
 }
 
 .mts-section-header p{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* ------ Parallax Section Style-----*/
@@ -438,14 +444,14 @@ a:active{
 }
 
 .mts-section-header-parallax h1{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	color: #ffffff;
 }
 
 .mts-section-header-parallax h1 span{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 }
@@ -458,7 +464,7 @@ a:active{
 }
 
 .mts-section-header-parallax p{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -597,12 +603,12 @@ header.mts-page-header .mts-main-menu.minified{
 }
 
 .mts-main-slides .mts-slider-text h1 span{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 700;
 }
 
 .mts-main-slides p{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 30px !important;
 	color: #ffffff;
@@ -756,7 +762,7 @@ header.mts-page-header .mts-main-menu.minified{
 }
 
 .mts-port-work-details .mts-port-work-desc .mts-like-btn a{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	color: #ffffff;
@@ -988,7 +994,7 @@ header.mts-page-header .mts-main-menu.minified{
 
 
 .mts-testimonial-section h2 span{
-    font-family: 'Raleway', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 62px;
     color: #ffffff;
@@ -1114,7 +1120,7 @@ header.mts-page-header .mts-main-menu.minified{
 	color: #ffffff;
 }
 .mts-pricing-plans a.mts-signup-btn{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;
@@ -1203,7 +1209,7 @@ header.mts-page-header .mts-main-menu.minified{
 }
 
 .mts-contact-section .mts-contact-form input[type='submit']{
-	font-family: 'Raleway', cursive;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;

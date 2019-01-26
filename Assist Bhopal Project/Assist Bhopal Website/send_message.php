@@ -1,6 +1,5 @@
 <?php
-	if(isset($_POST['submit']))
-  {
+	if(isset($_POST['submit'])){
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$msg=$_POST['msg'];
@@ -11,6 +10,6 @@
 		$headers="From: ".$email;
 
 		mail($to, $subject, $message, $headers);
-		
+		header("Location: index.html");
 	}
 ?>
